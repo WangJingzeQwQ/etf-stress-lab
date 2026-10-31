@@ -1,0 +1,21 @@
+{
+  "cache_hits": 506,
+  "cash_dividends": 910,
+  "dividend_source_rows": 48131,
+  "failures": [],
+  "formal_research_allowed": false,
+  "known_at_policy": "Conservative fallback to effective_date because announcement known_at is unavailable from this source.",
+  "master_codes": 1810,
+  "matched_events": 1177,
+  "network_requests": 0,
+  "output": "data\\m1_2\\meta\\corporate_actions.provisional.ndjson",
+  "outside_provisional_master_window": 95,
+  "split_source_rows": 1621,
+  "splits": 267,
+  "status": "PROVISIONAL_ACTIONS_READY",
+  "warnings": [],
+  "years": [
+    2018,
+    2026
+  ]
+}

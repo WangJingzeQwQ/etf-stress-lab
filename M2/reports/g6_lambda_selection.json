@@ -1,0 +1,250 @@
+{
+  "candidates": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "fit_scope": "validation_only",
+  "g4_reference": {
+    "expected_shortfall_95": 0.25019209740720116,
+    "max_drawdown": -0.7676136883044483,
+    "sharpe": -0.4569254176209385,
+    "total_return": -0.598389487751142
+  },
+  "holdout_evaluated": false,
+  "records": [
+    {
+      "lambda": 0.5,
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\reports\\runs\\phase5_lambda_selection\\lambda_0.50\\g6_seed_17.pt",
+      "model_sha256": "sha256:10fb1906ab9a8950dd76fe8cf05117ca9ad1b6ec8601b631f18396b6cdba4293",
+      "validation": {
+        "expected_shortfall_95": 0.25019209740720116,
+        "first_liquidation_probability": 1.0,
+        "max_drawdown": -0.7676136883044483,
+        "policy_run": {
+          "action_counts": {
+            "0.0": 0,
+            "0.25": 0,
+            "0.5": 0,
+            "0.75": 0,
+            "1.0": 18
+          },
+          "final_info": {
+            "account_status": "TERMINATED_LIQUIDATED",
+            "block_return": -0.5930454469595461,
+            "cash": "401610.512248857995569557999",
+            "debt": "0E-21",
+            "equity": "401610.512248857995569557999",
+            "first_liquidation_date": "2024-02-01",
+            "total_r": 1.0
+          },
+          "steps": 18,
+          "total_reward": -5.2909842366637605
+        },
+        "risk_sensitivity": {
+          "w120_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.2501920974072011,
+            "observations": 88,
+            "tail_observations": 5,
+            "var_positive_loss": 0.16584679028698066
+          },
+          "w120_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.19470116132791163,
+            "observations": 88,
+            "tail_observations": 9,
+            "var_positive_loss": 0.11576267514308326
+          },
+          "w250_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.2501920974072011,
+            "observations": 88,
+            "tail_observations": 5,
+            "var_positive_loss": 0.16584679028698066
+          },
+          "w250_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.19470116132791163,
+            "observations": 88,
+            "tail_observations": 9,
+            "var_positive_loss": 0.11576267514308326
+          },
+          "w60_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.30100841825509234,
+            "observations": 60,
+            "tail_observations": 3,
+            "var_positive_loss": 0.19504867107347898
+          },
+          "w60_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.23065381393208026,
+            "observations": 60,
+            "tail_observations": 6,
+            "var_positive_loss": 0.1329623965564759
+          }
+        },
+        "sharpe": -0.4569254176209385,
+        "total_return": -0.598389487751142
+      }
+    },
+    {
+      "lambda": 1.0,
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\reports\\runs\\phase5_lambda_selection\\lambda_1.00\\g6_seed_17.pt",
+      "model_sha256": "sha256:0725505a9f6b988ce71cbe1bb797e093e6ae952af3b8518875bb470a4232084e",
+      "validation": {
+        "expected_shortfall_95": 0.25019209740720116,
+        "first_liquidation_probability": 1.0,
+        "max_drawdown": -0.7676136883044483,
+        "policy_run": {
+          "action_counts": {
+            "0.0": 0,
+            "0.25": 0,
+            "0.5": 0,
+            "0.75": 0,
+            "1.0": 18
+          },
+          "final_info": {
+            "account_status": "TERMINATED_LIQUIDATED",
+            "block_return": -0.5930454469595461,
+            "cash": "401610.512248857995569557999",
+            "debt": "0E-21",
+            "equity": "401610.512248857995569557999",
+            "first_liquidation_date": "2024-02-01",
+            "total_r": 1.0
+          },
+          "steps": 18,
+          "total_reward": -6.320380099110526
+        },
+        "risk_sensitivity": {
+          "w120_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.2501920974072011,
+            "observations": 88,
+            "tail_observations": 5,
+            "var_positive_loss": 0.16584679028698066
+          },
+          "w120_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.19470116132791163,
+            "observations": 88,
+            "tail_observations": 9,
+            "var_positive_loss": 0.11576267514308326
+          },
+          "w250_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.2501920974072011,
+            "observations": 88,
+            "tail_observations": 5,
+            "var_positive_loss": 0.16584679028698066
+          },
+          "w250_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.19470116132791163,
+            "observations": 88,
+            "tail_observations": 9,
+            "var_positive_loss": 0.11576267514308326
+          },
+          "w60_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.30100841825509234,
+            "observations": 60,
+            "tail_observations": 3,
+            "var_positive_loss": 0.19504867107347898
+          },
+          "w60_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.23065381393208026,
+            "observations": 60,
+            "tail_observations": 6,
+            "var_positive_loss": 0.1329623965564759
+          }
+        },
+        "sharpe": -0.4569254176209385,
+        "total_return": -0.598389487751142
+      }
+    },
+    {
+      "lambda": 2.0,
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\reports\\runs\\phase5_lambda_selection\\lambda_2.00\\g6_seed_17.pt",
+      "model_sha256": "sha256:399de9a9254a217ecb5aaceeb4809d1635663fd104ae618982e6b96549bff7de",
+      "validation": {
+        "expected_shortfall_95": 0.25019209740720116,
+        "first_liquidation_probability": 1.0,
+        "max_drawdown": -0.7676136883044483,
+        "policy_run": {
+          "action_counts": {
+            "0.0": 0,
+            "0.25": 0,
+            "0.5": 0,
+            "0.75": 0,
+            "1.0": 18
+          },
+          "final_info": {
+            "account_status": "TERMINATED_LIQUIDATED",
+            "block_return": -0.5930454469595461,
+            "cash": "401610.512248857995569557999",
+            "debt": "0E-21",
+            "equity": "401610.512248857995569557999",
+            "first_liquidation_date": "2024-02-01",
+            "total_r": 1.0
+          },
+          "steps": 18,
+          "total_reward": -8.379171824004064
+        },
+        "risk_sensitivity": {
+          "w120_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.2501920974072011,
+            "observations": 88,
+            "tail_observations": 5,
+            "var_positive_loss": 0.16584679028698066
+          },
+          "w120_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.19470116132791163,
+            "observations": 88,
+            "tail_observations": 9,
+            "var_positive_loss": 0.11576267514308326
+          },
+          "w250_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.2501920974072011,
+            "observations": 88,
+            "tail_observations": 5,
+            "var_positive_loss": 0.16584679028698066
+          },
+          "w250_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.19470116132791163,
+            "observations": 88,
+            "tail_observations": 9,
+            "var_positive_loss": 0.11576267514308326
+          },
+          "w60_a0.05": {
+            "alpha": 0.05,
+            "cvar_positive_loss": 0.30100841825509234,
+            "observations": 60,
+            "tail_observations": 3,
+            "var_positive_loss": 0.19504867107347898
+          },
+          "w60_a0.10": {
+            "alpha": 0.1,
+            "cvar_positive_loss": 0.23065381393208026,
+            "observations": 60,
+            "tail_observations": 6,
+            "var_positive_loss": 0.1329623965564759
+          }
+        },
+        "sharpe": -0.4569254176209385,
+        "total_return": -0.598389487751142
+      }
+    }
+  ],
+  "selected_lambda": 0.5,
+  "selection_rule": "Among candidates whose validation max drawdown is no more than 2 percentage points worse than paired G4, choose the highest total return, then Sharpe.",
+  "selection_seed": 17,
+  "selection_steps": 2048,
+  "status": "SELECTED_VALIDATION_ONLY"
+}

@@ -1,0 +1,12 @@
+{
+  "action": "INFERRED_DELIST_FROM_LAST_VALID_QUOTE",
+  "code": "159927",
+  "delisted_status_effective_from": [
+    "2018-02-14"
+  ],
+  "formal_research_allowed": false,
+  "history_complete": false,
+  "master_output": "data\\m1_2\\meta\\etf_master.reconciled.ndjson",
+  "new_delist_date": "2018-02-13",
+  "old_delist_date": "2018-02-12"
+}

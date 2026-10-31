@@ -1,0 +1,49 @@
+{
+  "blocking_reasons": [],
+  "checks": {
+    "company_actions_known": true,
+    "cost_schedule_present": true,
+    "historical_master_complete": true,
+    "raw_coverage": true,
+    "real_bundle_manifest": true,
+    "trading_rules_complete": true,
+    "trading_rules_raw_validated": true
+  },
+  "counts": {
+    "announcement_matched": 1152,
+    "company_actions": 1177,
+    "complete_master_codes": 1810,
+    "complete_rule_codes": 1810,
+    "cost_scenarios": 3,
+    "effective_date_fallback": 25,
+    "incomplete_rule_codes": 0,
+    "master_codes": 1810,
+    "missing_rule_codes": 0,
+    "raw_error_codes": 0,
+    "raw_files_missing": 0,
+    "raw_files_present": 1810,
+    "raw_price_limit_violations": 0,
+    "raw_validation_status": "VALIDATED",
+    "trading_rule_rows": 3333,
+    "valid_trading_rule_rows": 3333
+  },
+  "formal_research_ready": true,
+  "manifest_error": null,
+  "paths": {
+    "corporate_actions": "data\\m1_2\\meta\\corporate_actions.annotated.ndjson",
+    "cost_schedules": "data\\m1_2\\meta\\cost_schedules.ndjson",
+    "data_manifest": "data\\m1_2\\meta\\data_manifest.json",
+    "master": "data/m1_2/meta/etf_master.observed_complete.ndjson",
+    "trading_rules": "data\\m1_2\\meta\\trading_rules.ndjson"
+  },
+  "status": "READY",
+  "trading_rule_audit": {
+    "complete_codes": 1810,
+    "coverage_contract": "full_required_lifecycle_calendar_coverage",
+    "incomplete_code_count": 0,
+    "issue_counts": {},
+    "known_at_policy": "known_at <= effective_from",
+    "missing_rule_code_count": 0,
+    "status": "READY"
+  }
+}

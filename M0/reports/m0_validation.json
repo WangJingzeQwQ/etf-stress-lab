@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "M0 synthetic fixture vertical slice",
+  "spec_version": "etf-stress-spec-2026-10-29-r2",
+  "test_command": "\"C:\\Users\\Public\\TongYuan\\.julia\\miniforge3\\python.exe\" -m pytest -q",
+  "tests_passed": 40,
+  "tests_failed": 0,
+  "cli_runs_compared": 2,
+  "result_hash": "sha256:a002c4386c7ccbf340fcb7d366c314a9d9bdd8f885c448cfaa2ea525cb44c411",
+  "trading_days": 195,
+  "trades": 32,
+  "target_portfolios": 8,
+  "identical_output_files": 9,
+  "data_source_kind": "SYNTHETIC_FIXTURE",
+  "financing_mode": "synthetic_stress",
+  "liquidation_model": "synthetic_v1",
+  "cost_model": "parameterized_etf_v1",
+  "real_market_conclusion_allowed": false
+}

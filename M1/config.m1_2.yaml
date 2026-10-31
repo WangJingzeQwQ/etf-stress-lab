@@ -1,0 +1,109 @@
+spec_version: etf-stress-spec-2026-10-29-r2
+
+data:
+  source: stored_bundle
+  source_kind: REAL_PROVIDER
+  start_date: "2018-01-01"
+  end_date: "2026-10-29"
+  fixture_seed: 0
+
+data_pipeline:
+  source: stored_bundle
+  bundle_root: "data/m1_2"
+  formal_research: true
+  provider: "akshare_sina"
+  request_interval_seconds: 3
+  max_retries: 5
+  backoff_seconds: 2
+  failure_queue: "data/m1_2/state/failure_queue.json"
+  download_state: "data/m1_2/state/download_state.json"
+  progress_path: "data/m1_2/state/download_progress.json"
+  universe_output: "reports/m1_2"
+  raw_directory: "data/m1_2/raw/etf"
+  master_file: "data/m1_2/meta/etf_master.observed_complete.ndjson"
+  corporate_actions_file: "data/m1_2/meta/corporate_actions.annotated.ndjson"
+  cost_schedules_file: "data/m1_2/meta/cost_schedules.ndjson"
+  trading_rules_file: "data/m1_2/meta/trading_rules.ndjson"
+
+universe:
+  min_listed_sessions: 60
+  adv_window: 20
+  min_adv_amount: 20000000
+
+strategy:
+  group: G1
+  frequency: monthly
+  momentum_lookback_sessions: 20
+  top_n: 5
+
+broker:
+  initial_cash: 1000000
+  leverage: 2
+  capital_base_mode: initial_equity
+  financing_mode: synthetic_stress
+  reentry_policy: first_liquidation_terminates
+  annual_interest_rate: 0.06
+  interest_day_count: 365
+  maintenance_fraction: 0.50
+  maintenance_floor: 0.0025
+  lot_size: 100
+  p0_1_frozen: true
+  liquidation_model: synthetic_v1
+
+cost:
+  cost_model: parameterized_etf_v1
+  effective_from: "2018-01-01"
+  effective_to: "2026-10-29"
+  commission_rate: 0.00030
+  minimum_commission_per_order: 5.00
+  exchange_fee_rate: 0.0
+  stamp_duty_rate: 0.0
+  fixed_other_fee: 0.0
+  buy_slippage_bps: 5
+  sell_slippage_bps: 5
+
+execution:
+  execution_model: adv_limit_v1
+  max_participation_rate: 0.10
+  adv_window: 20
+  lot_size: 100
+  liquidity_barrier_uses: "T-1"
+
+output:
+  root: "reports/runs/m1_2"
+  format: ndjson
+  compute_fee_drag: true
+
+membership:
+  start_date: "2018-01-01"
+  end_date: "2026-10-29"
+  cache_root: "data/m1_2/cache/membership"
+  master_output: "data/m1_2/meta/etf_master.provisional.ndjson"
+  report_output: "reports/m1_2/historical_membership_report.json"
+  current_snapshot: "data/m1_2/meta/current_snapshot.ndjson"
+  request_interval_seconds: 3
+  max_retries: 3
+  backoff_seconds: 1
+
+corporate_actions:
+  start_year: 2018
+  end_year: 2026
+  end_date: "2026-10-29"
+  master_path: "data/m1_2/meta/etf_master.provisional.ndjson"
+  output_path: "data/m1_2/meta/corporate_actions.provisional.ndjson"
+  cache_root: "data/m1_2/cache/corporate_actions"
+  report_path: "reports/m1_2/corporate_actions_report.json"
+  request_interval_seconds: 3
+  max_retries: 3
+  backoff_seconds: 1
+
+announcements:
+  actions_path: "data/m1_2/meta/corporate_actions.provisional.ndjson"
+  output_path: "data/m1_2/meta/corporate_actions.annotated.ndjson"
+  cache_root: "data/m1_2/cache/announcements"
+  report_path: "reports/m1_2/announcement_report.json"
+  request_interval_seconds: 3
+  max_retries: 3
+  backoff_seconds: 1
+  match_window_days: 120
+

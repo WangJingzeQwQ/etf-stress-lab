@@ -1,0 +1,13 @@
+{
+  "status": "FIXED_AND_DOCUMENTED",
+  "issue": "PortfolioManagementEnv final episode block could extend beyond the declared validation end.",
+  "validation_expected_sessions": 302,
+  "validation_snapshots_before_fix": 305,
+  "extra_sessions_scope": "purged development sessions after validation, not final Holdout",
+  "holdout_affected": false,
+  "holdout_reason": "The Holdout end is the final available market session, so the final block cannot extend beyond it.",
+  "models_retrained": false,
+  "prepreregistration_artifacts_overwritten": false,
+  "correction": "Added explicit end_date clipping to PortfolioManagementEnv and will publish a separate post-Holdout validation boundary audit.",
+  "decision_use": "No model, seed, threshold, CVaR parameter, cost, leverage or metric was changed."
+}

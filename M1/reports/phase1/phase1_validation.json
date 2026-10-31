@@ -1,0 +1,41 @@
+{
+  "status": "ENGINEERING_PASS_FORMAL_DATA_BLOCKED",
+  "scope": "M1 Phase 1 point-in-time data infrastructure",
+  "spec_version": "etf-stress-spec-2026-10-29-r2",
+  "test_command": "\"C:\\Users\\Public\\TongYuan\\.julia\\miniforge3\\python.exe\" -m pytest -q -p no:cacheprovider",
+  "tests_passed": 83,
+  "tests_failed": 0,
+  "data_source_kind": "SYNTHETIC_FIXTURE",
+  "data_version": "sha256:f0bae48a54b98021e25b3f1c901a9af760390c37a946f4e8a5b4e938941b4db6",
+  "result_hash": "sha256:d816e270cc59bc6e9b6ff66d99ab132a5f1a41c0ddb12a61be3c58d9843d748e",
+  "universe_before_delist": {
+    "execution_date": "2024-02-09",
+    "eligible_count": 7,
+    "delisted_test_code_included": true
+  },
+  "universe_after_delist": {
+    "execution_date": "2024-02-19",
+    "eligible_count": 6,
+    "delisted_test_code_included": false
+  },
+  "formal_research_allowed": false,
+  "akshare_installed": true,
+  "m1_1_small_batch_status": "PASS_RAW_INGESTION_FORMAL_BLOCKED",
+  "m1_1_codes": 5,
+  "m1_1_rows_per_code": 682,
+  "m1_1_last_date": "2026-10-29",
+  "m1_1_source_kind": "REAL_PROVIDER_PROVISIONAL",
+  "m1_2_status": "RAW_COVERAGE_COMPLETE_ANNOUNCEMENTS_READY_RULES_BLOCKED",
+  "m1_2_historical_codes": 1810,
+  "m1_2_current_candidate_codes": 1691,
+  "m1_2_inferred_delisted_codes": 119,
+  "m1_2_raw_files_present": 1810,
+  "m1_2_raw_files_missing": 0,
+  "m1_2_identity_conflicts": 0,
+  "m1_2_quarantined_rows": 1,
+  "m1_2_corporate_action_events": 1177,
+  "m1_2_corporate_action_announcement_matched": 1152,
+  "m1_2_corporate_action_effective_date_fallback": 25,
+  "m1_2_trading_rule_rows": 0,
+  "real_market_conclusion_allowed": false
+}

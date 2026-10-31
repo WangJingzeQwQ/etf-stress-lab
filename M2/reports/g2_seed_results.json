@@ -1,0 +1,923 @@
+{
+  "aggregate": {
+    "mean_rank_ic": {
+      "ci95_high": 0.09895457853650175,
+      "ci95_low": 0.0958684813514244,
+      "max": 0.09928234178135456,
+      "mean": 0.09741152994396307,
+      "min": 0.09592985234938023,
+      "std": 0.0012429256287830902
+    },
+    "mean_top5_excess_return": {
+      "ci95_high": 0.0002622212843508842,
+      "ci95_low": -0.001809852479415019,
+      "max": 0.0003624812747789456,
+      "mean": -0.0007738155975320674,
+      "min": -0.0017044901263244627,
+      "std": 0.0008345276999593662
+    },
+    "rank_ic_ir": {
+      "ci95_high": 0.35436813315148846,
+      "ci95_low": 0.3421099084046139,
+      "max": 0.3543906389393373,
+      "mean": 0.3482390207780512,
+      "min": 0.34132456041234494,
+      "std": 0.004936999967125667
+    },
+    "top20_precision": {
+      "ci95_high": 0.24017453268122713,
+      "ci95_low": 0.2281698381797,
+      "max": 0.2397350993377483,
+      "mean": 0.23417218543046356,
+      "min": 0.22781456953642387,
+      "std": 0.004834890661839445
+    }
+  },
+  "data_version": "sha256:44127aa7dc2539e90375fa1e03b2b0f8dfafd21787dc18a105b6dd773f26f7c6",
+  "feature_names": [
+    "momentum_5",
+    "momentum_10",
+    "momentum_20",
+    "momentum_60",
+    "volatility_20",
+    "downside_vol_20",
+    "price_to_ma20",
+    "price_to_ma60",
+    "rsi14",
+    "amount_ratio_5_20",
+    "volume_ratio_5_20",
+    "amihud_20",
+    "drawdown_60",
+    "range_20"
+  ],
+  "group": "G2",
+  "holdout_evaluated": false,
+  "seed_results": [
+    {
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.016267313694439033,
+          0.020610150659933116,
+          0.02571900758585054,
+          0.03839125807354227
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g2\\g2_seed_17.txt",
+      "model_sha256": "sha256:96bf305db5c28a4c7a9343a70da22a00a9e19a8f652cb3aed54426eb5af051ba",
+      "seed": 17,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.016267313694439033,
+            0.020610150659933116,
+            0.02571900758585054,
+            0.03839125807354227
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.09758595935043907,
+        "mean_top5_excess_return": -0.0017044901263244627,
+        "positive_ic_date_rate": 0.6655629139072847,
+        "rank_ic_ir": 0.35124145565236703,
+        "rank_ic_std": 0.27783155370766505,
+        "rows": 102250,
+        "top20_precision": 0.22781456953642387
+      },
+      "walk_forward": [
+        {
+          "dates": 60,
+          "fold": 17,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.015632523519843407,
+              0.01815409552718505,
+              0.021788373325923188,
+              0.027838459574044357
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.19925251045926748,
+          "mean_top5_excess_return": 0.020333658863017086,
+          "positive_ic_date_rate": 0.8,
+          "rank_ic_ir": 0.7263946178932558,
+          "rank_ic_std": 0.2743033959105515,
+          "rows": 17565,
+          "top20_precision": 0.35333333333333333,
+          "train_rows": 186814,
+          "validation_rows": 17565
+        },
+        {
+          "dates": 60,
+          "fold": 18,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.021380754664101158,
+              0.040733081507855824,
+              0.07680692461406409,
+              0.09526307686593485
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.1029085809114851,
+          "mean_top5_excess_return": -0.011601130674530995,
+          "positive_ic_date_rate": 0.65,
+          "rank_ic_ir": 0.40439164851932674,
+          "rank_ic_std": 0.2544775127980094,
+          "rows": 20328,
+          "top20_precision": 0.16333333333333339,
+          "train_rows": 186814,
+          "validation_rows": 20328
+        },
+        {
+          "dates": 60,
+          "fold": 19,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.01412874570861589,
+              0.01603509569846961,
+              0.02055413573659554,
+              0.02733452323909608
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.1541885117675508,
+          "mean_top5_excess_return": -0.001839970943861792,
+          "positive_ic_date_rate": 0.7666666666666667,
+          "rank_ic_ir": 0.5965691110768906,
+          "rank_ic_std": 0.2584587584315571,
+          "rows": 19636,
+          "top20_precision": 0.23333333333333334,
+          "train_rows": 186814,
+          "validation_rows": 19636
+        },
+        {
+          "dates": 60,
+          "fold": 20,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.0165047552657894,
+              0.019814295206968355,
+              0.021736630292663005,
+              0.026788200988941347
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": -0.06641563655384158,
+          "mean_top5_excess_return": -0.018258929113816227,
+          "positive_ic_date_rate": 0.5666666666666667,
+          "rank_ic_ir": -0.2514307445645541,
+          "rank_ic_std": 0.26415081683373676,
+          "rows": 18410,
+          "top20_precision": 0.2033333333333333,
+          "train_rows": 186814,
+          "validation_rows": 18410
+        }
+      ]
+    },
+    {
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.01591112074469429,
+          0.020685258739760508,
+          0.026102660182686005,
+          0.038184591564505606
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g2\\g2_seed_29.txt",
+      "model_sha256": "sha256:6998013f6bbd609682200ee6e174205705ee5a22f84a72fe695518e47fd3ccd7",
+      "seed": 29,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.01591112074469429,
+            0.020685258739760508,
+            0.026102660182686005,
+            0.038184591564505606
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.09592985234938023,
+        "mean_top5_excess_return": -0.0004425755265748675,
+        "positive_ic_date_rate": 0.6589403973509934,
+        "rank_ic_ir": 0.34132456041234494,
+        "rank_ic_std": 0.2810517128726101,
+        "rows": 102250,
+        "top20_precision": 0.23774834437086093
+      },
+      "walk_forward": [
+        {
+          "dates": 60,
+          "fold": 17,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.015515313812852554,
+              0.0175733460941042,
+              0.02219708638451704,
+              0.03213643585288097
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.20831613467366206,
+          "mean_top5_excess_return": 0.022807085741208696,
+          "positive_ic_date_rate": 0.8,
+          "rank_ic_ir": 0.7587327686805677,
+          "rank_ic_std": 0.27455797781862346,
+          "rows": 17565,
+          "top20_precision": 0.36666666666666675,
+          "train_rows": 186814,
+          "validation_rows": 17565
+        },
+        {
+          "dates": 60,
+          "fold": 18,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.0215596565917558,
+              0.04044860302369697,
+              0.07637589729004937,
+              0.09483235630453318
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.0988421520363922,
+          "mean_top5_excess_return": -0.009944140026604518,
+          "positive_ic_date_rate": 0.6666666666666666,
+          "rank_ic_ir": 0.38581458619638004,
+          "rank_ic_std": 0.2561908117856421,
+          "rows": 20328,
+          "top20_precision": 0.18000000000000005,
+          "train_rows": 186814,
+          "validation_rows": 20328
+        },
+        {
+          "dates": 60,
+          "fold": 19,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.013532783724094019,
+              0.016031823421153106,
+              0.020551850269656474,
+              0.027097470950095702
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.1432071049637181,
+          "mean_top5_excess_return": -0.0002252080955552711,
+          "positive_ic_date_rate": 0.75,
+          "rank_ic_ir": 0.5455426757510099,
+          "rank_ic_std": 0.2625039457574516,
+          "rows": 19636,
+          "top20_precision": 0.24000000000000005,
+          "train_rows": 186814,
+          "validation_rows": 19636
+        },
+        {
+          "dates": 60,
+          "fold": 20,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.01639425058113178,
+              0.018631854134460883,
+              0.021446244041776755,
+              0.027123449834275382
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": -0.06847982747852756,
+          "mean_top5_excess_return": -0.02194028913651315,
+          "positive_ic_date_rate": 0.5333333333333333,
+          "rank_ic_ir": -0.2602880725769318,
+          "rank_ic_std": 0.2630924529140204,
+          "rows": 18410,
+          "top20_precision": 0.19,
+          "train_rows": 186814,
+          "validation_rows": 18410
+        }
+      ]
+    },
+    {
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.016352354770920542,
+          0.021049833768596732,
+          0.026506827930168484,
+          0.038091179607191605
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g2\\g2_seed_43.txt",
+      "model_sha256": "sha256:e3ae2d2a4e24e6d2c10e9c33823543c52b1690c6271463b98fe512df17fb48cf",
+      "seed": 43,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.016352354770920542,
+            0.021049833768596732,
+            0.026506827930168484,
+            0.038091179607191605
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.09928234178135456,
+        "mean_top5_excess_return": -0.0006094710794889663,
+        "positive_ic_date_rate": 0.6622516556291391,
+        "rank_ic_ir": 0.3543906389393373,
+        "rank_ic_std": 0.2801494477351282,
+        "rows": 102250,
+        "top20_precision": 0.23112582781456953
+      },
+      "walk_forward": [
+        {
+          "dates": 60,
+          "fold": 17,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.01620799989736424,
+              0.01848215882795022,
+              0.02232222182558177,
+              0.03055320040399237
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.20286069897481193,
+          "mean_top5_excess_return": 0.021244774356196313,
+          "positive_ic_date_rate": 0.8,
+          "rank_ic_ir": 0.7159662122897086,
+          "rank_ic_std": 0.2833383691753409,
+          "rows": 17565,
+          "top20_precision": 0.34666666666666673,
+          "train_rows": 186814,
+          "validation_rows": 17565
+        },
+        {
+          "dates": 60,
+          "fold": 18,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.02135883279779673,
+              0.040490921885003785,
+              0.07717310290163006,
+              0.09732884530064566
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.10488150717925847,
+          "mean_top5_excess_return": -0.007449791042397902,
+          "positive_ic_date_rate": 0.65,
+          "rank_ic_ir": 0.4091788408949945,
+          "rank_ic_std": 0.25632192258488184,
+          "rows": 20328,
+          "top20_precision": 0.19666666666666668,
+          "train_rows": 186814,
+          "validation_rows": 20328
+        },
+        {
+          "dates": 60,
+          "fold": 19,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.013415372289991597,
+              0.01572180044842362,
+              0.01930586607013637,
+              0.025438005460843197
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.15717997453267502,
+          "mean_top5_excess_return": 0.0019351368203620392,
+          "positive_ic_date_rate": 0.7666666666666667,
+          "rank_ic_ir": 0.602654420412753,
+          "rank_ic_std": 0.2608127796109481,
+          "rows": 19636,
+          "top20_precision": 0.24333333333333335,
+          "train_rows": 186814,
+          "validation_rows": 19636
+        },
+        {
+          "dates": 60,
+          "fold": 20,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.016750124407546526,
+              0.018831735949271438,
+              0.022248807208043512,
+              0.027588071527333325
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": -0.06416870122755593,
+          "mean_top5_excess_return": -0.022836785082695037,
+          "positive_ic_date_rate": 0.5333333333333333,
+          "rank_ic_ir": -0.245331415139948,
+          "rank_ic_std": 0.261559251149924,
+          "rows": 18410,
+          "top20_precision": 0.18333333333333332,
+          "train_rows": 186814,
+          "validation_rows": 18410
+        }
+      ]
+    },
+    {
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.016060525724895913,
+          0.02065074990980568,
+          0.026763234806561377,
+          0.03859694514410219
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g2\\g2_seed_71.txt",
+      "model_sha256": "sha256:1aa507ab7e41b554b7d28b4d3b03f97e56016d60d3febd2a0578e0819992db13",
+      "seed": 71,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.016060525724895913,
+            0.02065074990980568,
+            0.026763234806561377,
+            0.03859694514410219
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.09674574067258998,
+        "mean_top5_excess_return": 0.0003624812747789456,
+        "positive_ic_date_rate": 0.6655629139072847,
+        "rank_ic_ir": 0.3475199760571823,
+        "rank_ic_std": 0.278389005921982,
+        "rows": 102250,
+        "top20_precision": 0.2397350993377483
+      },
+      "walk_forward": [
+        {
+          "dates": 60,
+          "fold": 17,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.015282653899656527,
+              0.017255120695065473,
+              0.02204036382534685,
+              0.03265871946980518
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.1998295978892673,
+          "mean_top5_excess_return": 0.022701757810312154,
+          "positive_ic_date_rate": 0.7833333333333333,
+          "rank_ic_ir": 0.7174170630783632,
+          "rank_ic_std": 0.27854034727278293,
+          "rows": 17565,
+          "top20_precision": 0.38333333333333336,
+          "train_rows": 186814,
+          "validation_rows": 17565
+        },
+        {
+          "dates": 60,
+          "fold": 18,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.02213029400187552,
+              0.04116229779498944,
+              0.07544550521181612,
+              0.09573217517939347
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.1019640403248199,
+          "mean_top5_excess_return": -0.009939494870674349,
+          "positive_ic_date_rate": 0.65,
+          "rank_ic_ir": 0.3971688233020143,
+          "rank_ic_std": 0.2567272009849691,
+          "rows": 20328,
+          "top20_precision": 0.16333333333333336,
+          "train_rows": 186814,
+          "validation_rows": 20328
+        },
+        {
+          "dates": 60,
+          "fold": 19,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.01440315717009903,
+              0.01659035731039868,
+              0.021026402150792226,
+              0.027625998124202415
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.14510228059214675,
+          "mean_top5_excess_return": -0.0020127614677937283,
+          "positive_ic_date_rate": 0.7666666666666667,
+          "rank_ic_ir": 0.5650118257573079,
+          "rank_ic_std": 0.2568128205062971,
+          "rows": 19636,
+          "top20_precision": 0.2266666666666667,
+          "train_rows": 186814,
+          "validation_rows": 19636
+        },
+        {
+          "dates": 60,
+          "fold": 20,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.017086893416322926,
+              0.019722297187385773,
+              0.022711617797610367,
+              0.02684779615967122
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": -0.06325486734475684,
+          "mean_top5_excess_return": -0.013888464292446128,
+          "positive_ic_date_rate": 0.55,
+          "rank_ic_ir": -0.24590895865902426,
+          "rank_ic_std": 0.2572288040651078,
+          "rows": 18410,
+          "top20_precision": 0.21666666666666665,
+          "train_rows": 186814,
+          "validation_rows": 18410
+        }
+      ]
+    },
+    {
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.016370019207857685,
+          0.02047261971634671,
+          0.02588211144935474,
+          0.03857820586400435
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g2\\g2_seed_101.txt",
+      "model_sha256": "sha256:731235690f1ab65312575bead0d64390510b86ecc2ca8d156f8dbe6cae0843ef",
+      "seed": 101,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.016370019207857685,
+            0.02047261971634671,
+            0.02588211144935474,
+            0.03857820586400435
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.09751375556605149,
+        "mean_top5_excess_return": -0.0014750225300509865,
+        "positive_ic_date_rate": 0.6622516556291391,
+        "rank_ic_ir": 0.34671847282902424,
+        "rank_ic_std": 0.2812476496288042,
+        "rows": 102250,
+        "top20_precision": 0.2344370860927152
+      },
+      "walk_forward": [
+        {
+          "dates": 60,
+          "fold": 17,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.01569068535710427,
+              0.01766414306006106,
+              0.022065504805658533,
+              0.029489594454404616
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.20756726420485033,
+          "mean_top5_excess_return": 0.02325781759481047,
+          "positive_ic_date_rate": 0.7833333333333333,
+          "rank_ic_ir": 0.7444461367872416,
+          "rank_ic_std": 0.2788210643427274,
+          "rows": 17565,
+          "top20_precision": 0.38,
+          "train_rows": 186814,
+          "validation_rows": 17565
+        },
+        {
+          "dates": 60,
+          "fold": 18,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.02096688473882818,
+              0.04036256399273677,
+              0.07962721645430267,
+              0.09687636421683596
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.09838905946285277,
+          "mean_top5_excess_return": -0.010555329765702287,
+          "positive_ic_date_rate": 0.6666666666666666,
+          "rank_ic_ir": 0.39777674841865895,
+          "rank_ic_std": 0.24734743761165887,
+          "rows": 20328,
+          "top20_precision": 0.17666666666666664,
+          "train_rows": 186814,
+          "validation_rows": 20328
+        },
+        {
+          "dates": 60,
+          "fold": 19,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.014217825900241666,
+              0.016576411269901115,
+              0.020200418120212952,
+              0.027967874369622735
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": 0.15277353276615335,
+          "mean_top5_excess_return": -0.0003857843768250724,
+          "positive_ic_date_rate": 0.7833333333333333,
+          "rank_ic_ir": 0.5769542038836301,
+          "rank_ic_std": 0.2647931703032834,
+          "rows": 19636,
+          "top20_precision": 0.23333333333333336,
+          "train_rows": 186814,
+          "validation_rows": 19636
+        },
+        {
+          "dates": 60,
+          "fold": 20,
+          "mapper": {
+            "fit_scope": "validation_only",
+            "levels": [
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "thresholds": [
+              0.01684149284019495,
+              0.019210107263005455,
+              0.022372469049530448,
+              0.025839743272903466
+            ],
+            "version": "g2_validation_quantiles_v1"
+          },
+          "mean_rank_ic": -0.0634945120834662,
+          "mean_top5_excess_return": -0.024217281950151586,
+          "positive_ic_date_rate": 0.5166666666666667,
+          "rank_ic_ir": -0.24103691004246697,
+          "rank_ic_std": 0.2634223616303389,
+          "rows": 18410,
+          "top20_precision": 0.19666666666666668,
+          "train_rows": 186814,
+          "validation_rows": 18410
+        }
+      ]
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "source_kind": "REAL_PROVIDER",
+  "status": "COMPLETE",
+  "train_rows": 186814,
+  "validation_rows": 102250
+}

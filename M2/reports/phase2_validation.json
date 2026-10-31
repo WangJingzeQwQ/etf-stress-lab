@@ -1,0 +1,12 @@
+{
+  "status": "ENGINEERING_PASS_FORMAL_RESEARCH_BLOCKED",
+  "milestone": "M2 / Phase 2",
+  "tests_passed": 88,
+  "tests_failed": 0,
+  "feature_count": 14,
+  "feature_rows_demo": 7,
+  "label_rows_demo": 6,
+  "label_horizon_sessions": 20,
+  "formal_research_allowed": false,
+  "reason": "M1.2 formal data gate remains incomplete"
+}

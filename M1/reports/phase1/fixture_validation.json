@@ -1,0 +1,13 @@
+{
+  "backtest_allowed": true,
+  "error_count": 0,
+  "formal_research_allowed": false,
+  "issues": [
+    {
+      "code": "*",
+      "message": "Source is synthetic or parameterized; not real-market evidence.",
+      "severity": "WARNING"
+    }
+  ],
+  "warning_count": 1
+}

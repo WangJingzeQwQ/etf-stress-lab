@@ -1,0 +1,567 @@
+{
+  "aggregate": {
+    "mean_rank_ic": {
+      "ci95_high": 0.10454548621287292,
+      "ci95_low": 0.09949504161037805,
+      "max": 0.10542271745874511,
+      "mean": 0.10202026391162548,
+      "min": 0.1004523806648534,
+      "std": 0.0020340665431872245
+    },
+    "mean_top5_excess_return": {
+      "ci95_high": 0.003168682723117829,
+      "ci95_low": 0.0006909454922314805,
+      "max": 0.003156214005242341,
+      "mean": 0.0019298141076746547,
+      "min": 0.0008656252352529463,
+      "std": 0.000997908659698121
+    },
+    "rank_ic_ir": {
+      "ci95_high": 0.3760527283444101,
+      "ci95_low": 0.35198377891666205,
+      "max": 0.3747085743472672,
+      "mean": 0.3640182536305361,
+      "min": 0.35014353776479396,
+      "std": 0.00969376928448296
+    },
+    "top20_precision": {
+      "ci95_high": 0.2647230752223321,
+      "ci95_low": 0.23434977245978703,
+      "max": 0.2635761589403973,
+      "mean": 0.24953642384105956,
+      "min": 0.23046357615894042,
+      "std": 0.012232847564523232
+    }
+  },
+  "data_version": "sha256:44127aa7dc2539e90375fa1e03b2b0f8dfafd21787dc18a105b6dd773f26f7c6",
+  "development_feature_cutoff": "2024-12-23",
+  "fairness": {
+    "a_layer_features": "14 current features + C representation",
+    "a_layer_params": {
+      "colsample_bytree": 0.9,
+      "learning_rate": 0.03,
+      "min_child_samples": 200,
+      "n_estimators": 300,
+      "n_jobs": 4,
+      "num_leaves": 15,
+      "reg_lambda": 1.0,
+      "subsample": 0.9
+    },
+    "c_only_difference": "LSTM representation added to the same current features",
+    "paired_seeds": [
+      17,
+      29,
+      43,
+      71,
+      101
+    ]
+  },
+  "group": "G3",
+  "hidden_size": 16,
+  "holdout_evaluated": false,
+  "scaler": {
+    "feature_names": [
+      "momentum_5",
+      "momentum_10",
+      "momentum_20",
+      "momentum_60",
+      "volatility_20",
+      "downside_vol_20",
+      "price_to_ma20",
+      "price_to_ma60",
+      "rsi14",
+      "amount_ratio_5_20",
+      "volume_ratio_5_20",
+      "amihud_20",
+      "drawdown_60",
+      "range_20"
+    ],
+    "fit_scope": "train_only",
+    "mean": [
+      0.0002854189369827509,
+      0.001002855715341866,
+      0.003603204619139433,
+      0.01094041671603918,
+      0.015371020883321762,
+      0.008397487923502922,
+      0.0002175336267100647,
+      0.0027279737405478954,
+      50.961273193359375,
+      0.009884480386972427,
+      0.010573900304734707,
+      0.38837262988090515,
+      -0.07913915067911148,
+      0.11908408999443054
+    ],
+    "std": [
+      0.04515664279460907,
+      0.05748533084988594,
+      0.07774548977613449,
+      0.13222914934158325,
+      0.02665998414158821,
+      0.00678714644163847,
+      0.04413622245192528,
+      0.07534592598676682,
+      16.76108741760254,
+      0.2750674784183502,
+      0.2715758979320526,
+      4.176344871520996,
+      0.07392854988574982,
+      0.13636250793933868
+    ]
+  },
+  "seed_results": [
+    {
+      "a_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_a_seed_17.txt",
+      "a_model_sha256": "sha256:b97705acd6acac1427a477c828459ce19d6323ab2440ffb1c8925154dc47694e",
+      "c_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_c_seed_17.pt",
+      "c_model_sha256": "sha256:e4f2d403a503141dfb8eef4dba7a0d78e3a28d1afaaeeb79b88c53df26d5f614",
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.016298899020601342,
+          0.021181726819075805,
+          0.028196546107358212,
+          0.03865280193708159
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "encoder": {
+        "best_validation_mse": 0.0036271963641047477,
+        "epochs_completed": 6,
+        "history": [
+          {
+            "epoch": 1,
+            "train_mse": 0.006145689834016118,
+            "validation_mse": 0.004254281199537218
+          },
+          {
+            "epoch": 2,
+            "train_mse": 0.003920845123552706,
+            "validation_mse": 0.0037948430655524133
+          },
+          {
+            "epoch": 3,
+            "train_mse": 0.003664503350640709,
+            "validation_mse": 0.003688328107818961
+          },
+          {
+            "epoch": 4,
+            "train_mse": 0.0035530282909742084,
+            "validation_mse": 0.0036339220544323327
+          },
+          {
+            "epoch": 5,
+            "train_mse": 0.0034872406763378433,
+            "validation_mse": 0.0036271963641047477
+          },
+          {
+            "epoch": 6,
+            "train_mse": 0.003442644462428029,
+            "validation_mse": 0.00363369504455477
+          }
+        ],
+        "selected_epoch": 5
+      },
+      "seed": 17,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.016298899020601342,
+            0.021181726819075805,
+            0.028196546107358212,
+            0.03865280193708159
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.10213645813773557,
+        "mean_top5_excess_return": 0.0017494008807549704,
+        "positive_ic_date_rate": 0.6556291390728477,
+        "rank_ic_ir": 0.36784366602638185,
+        "rank_ic_std": 0.2776626800212738,
+        "rows": 102250,
+        "top20_precision": 0.2635761589403973
+      }
+    },
+    {
+      "a_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_a_seed_29.txt",
+      "a_model_sha256": "sha256:f2495615beed768e050d343dabbab3064e6ba94952cc55b43b84cccfc1c322a8",
+      "c_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_c_seed_29.pt",
+      "c_model_sha256": "sha256:c10a004c0f4ea733e5c9e0c5818876e17ea6d266afe7bcc06fcf20c410c7067e",
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.015867086169426472,
+          0.020374913944511342,
+          0.02632833574049447,
+          0.04324322944568412
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "encoder": {
+        "best_validation_mse": 0.0037102277809754015,
+        "epochs_completed": 6,
+        "history": [
+          {
+            "epoch": 1,
+            "train_mse": 0.007357577478077567,
+            "validation_mse": 0.004409900279715657
+          },
+          {
+            "epoch": 2,
+            "train_mse": 0.003882015751113248,
+            "validation_mse": 0.0038881658110767603
+          },
+          {
+            "epoch": 3,
+            "train_mse": 0.003611684017712049,
+            "validation_mse": 0.003783353632315993
+          },
+          {
+            "epoch": 4,
+            "train_mse": 0.003505313148722671,
+            "validation_mse": 0.0037336313258856534
+          },
+          {
+            "epoch": 5,
+            "train_mse": 0.0034517482931448688,
+            "validation_mse": 0.003717116806656122
+          },
+          {
+            "epoch": 6,
+            "train_mse": 0.0034174468755255303,
+            "validation_mse": 0.0037102277809754015
+          }
+        ],
+        "selected_epoch": 6
+      },
+      "seed": 29,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.015867086169426472,
+            0.020374913944511342,
+            0.02632833574049447,
+            0.04324322944568412
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.10159192669938197,
+        "mean_top5_excess_return": 0.003156214005242341,
+        "positive_ic_date_rate": 0.6655629139072847,
+        "rank_ic_ir": 0.3584897356547925,
+        "rank_ic_std": 0.2833886624782191,
+        "rows": 102250,
+        "top20_precision": 0.24900662251655625
+      }
+    },
+    {
+      "a_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_a_seed_43.txt",
+      "a_model_sha256": "sha256:a70cff4e0053e5cf03853f0b14fe29fbb505cc404e5d31c56a48b513dd32d671",
+      "c_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_c_seed_43.pt",
+      "c_model_sha256": "sha256:e21456e310777cd4153b59d6fe4f8908e6e9b81cd2062da6eb3246c2c3823bdc",
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.017301799012577605,
+          0.02216108362059276,
+          0.02744188927406005,
+          0.03870569820150612
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "encoder": {
+        "best_validation_mse": 0.003721364801749587,
+        "epochs_completed": 6,
+        "history": [
+          {
+            "epoch": 1,
+            "train_mse": 0.017250030116432277,
+            "validation_mse": 0.005727112423628568
+          },
+          {
+            "epoch": 2,
+            "train_mse": 0.004164447180896051,
+            "validation_mse": 0.003892126991413534
+          },
+          {
+            "epoch": 3,
+            "train_mse": 0.0037316236438587167,
+            "validation_mse": 0.003742037466727197
+          },
+          {
+            "epoch": 4,
+            "train_mse": 0.003611604006788816,
+            "validation_mse": 0.003721364801749587
+          },
+          {
+            "epoch": 5,
+            "train_mse": 0.003541560676240598,
+            "validation_mse": 0.0037242534290999173
+          },
+          {
+            "epoch": 6,
+            "train_mse": 0.003492048132688808,
+            "validation_mse": 0.003727030730806291
+          }
+        ],
+        "selected_epoch": 4
+      },
+      "seed": 43,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.017301799012577605,
+            0.02216108362059276,
+            0.02744188927406005,
+            0.03870569820150612
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.10542271745874511,
+        "mean_top5_excess_return": 0.0008656252352529463,
+        "positive_ic_date_rate": 0.6655629139072847,
+        "rank_ic_ir": 0.3747085743472672,
+        "rank_ic_std": 0.281345890315931,
+        "rows": 102250,
+        "top20_precision": 0.2556291390728477
+      }
+    },
+    {
+      "a_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_a_seed_71.txt",
+      "a_model_sha256": "sha256:04a333de6fd4d897a0564c6aeec380383b3cc83d6656c18ee77849156e5f99ae",
+      "c_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_c_seed_71.pt",
+      "c_model_sha256": "sha256:a46f740407b7775474437f79f79aea651644d84d4f71db53db9ea3a83433a400",
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.017365353575145705,
+          0.023476546004455028,
+          0.02884968653087486,
+          0.04139777213191824
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "encoder": {
+        "best_validation_mse": 0.0038127975026145578,
+        "epochs_completed": 6,
+        "history": [
+          {
+            "epoch": 1,
+            "train_mse": 0.015276438179282169,
+            "validation_mse": 0.004970688163302839
+          },
+          {
+            "epoch": 2,
+            "train_mse": 0.004036433359588851,
+            "validation_mse": 0.004171521267853678
+          },
+          {
+            "epoch": 3,
+            "train_mse": 0.0037398303153257603,
+            "validation_mse": 0.003999436032027006
+          },
+          {
+            "epoch": 4,
+            "train_mse": 0.0036306874376428357,
+            "validation_mse": 0.003909719521179795
+          },
+          {
+            "epoch": 5,
+            "train_mse": 0.003561751898130265,
+            "validation_mse": 0.0038573937630280854
+          },
+          {
+            "epoch": 6,
+            "train_mse": 0.0035143945711719722,
+            "validation_mse": 0.0038127975026145578
+          }
+        ],
+        "selected_epoch": 6
+      },
+      "seed": 71,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.017365353575145705,
+            0.023476546004455028,
+            0.02884968653087486,
+            0.04139777213191824
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.10049783659741139,
+        "mean_top5_excess_return": 0.001128354441271509,
+        "positive_ic_date_rate": 0.6490066225165563,
+        "rank_ic_ir": 0.35014353776479396,
+        "rank_ic_std": 0.28701896724685516,
+        "rows": 102250,
+        "top20_precision": 0.24900662251655625
+      }
+    },
+    {
+      "a_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_a_seed_101.txt",
+      "a_model_sha256": "sha256:e7816fc54f0de864461d1902fa29c5fc844ad04ab7cafe5c1e44b31ca08bc962",
+      "c_model_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\models\\g3\\g3_c_seed_101.pt",
+      "c_model_sha256": "sha256:26803c391ecfbf3596c337fce14c92042c9317edd655a68da1c7be1f88d51610",
+      "confidence_mapper": {
+        "fit_scope": "validation_only",
+        "levels": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "thresholds": [
+          0.01778907143785636,
+          0.022716486366078016,
+          0.028766092290665842,
+          0.041735602289436846
+        ],
+        "version": "g2_validation_quantiles_v1"
+      },
+      "encoder": {
+        "best_validation_mse": 0.0037976966612041,
+        "epochs_completed": 6,
+        "history": [
+          {
+            "epoch": 1,
+            "train_mse": 0.03181858511546064,
+            "validation_mse": 0.0073734944686293605
+          },
+          {
+            "epoch": 2,
+            "train_mse": 0.005274126383505562,
+            "validation_mse": 0.004463979327119887
+          },
+          {
+            "epoch": 3,
+            "train_mse": 0.003950952401137281,
+            "validation_mse": 0.004069629879668355
+          },
+          {
+            "epoch": 4,
+            "train_mse": 0.003711173026390133,
+            "validation_mse": 0.003958793939091265
+          },
+          {
+            "epoch": 5,
+            "train_mse": 0.003607599729454237,
+            "validation_mse": 0.003859638264402747
+          },
+          {
+            "epoch": 6,
+            "train_mse": 0.0035429530497307353,
+            "validation_mse": 0.0037976966612041
+          }
+        ],
+        "selected_epoch": 6
+      },
+      "seed": 101,
+      "validation": {
+        "dates": 302,
+        "mapper": {
+          "fit_scope": "validation_only",
+          "levels": [
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "thresholds": [
+            0.01778907143785636,
+            0.022716486366078016,
+            0.028766092290665842,
+            0.041735602289436846
+          ],
+          "version": "g2_validation_quantiles_v1"
+        },
+        "mean_rank_ic": 0.1004523806648534,
+        "mean_top5_excess_return": 0.0027494759758515076,
+        "positive_ic_date_rate": 0.6556291390728477,
+        "rank_ic_ir": 0.3689057543594449,
+        "rank_ic_std": 0.27229822109789376,
+        "rows": 102250,
+        "top20_precision": 0.23046357615894042
+      }
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43,
+    71,
+    101
+  ],
+  "sequence_length": 20,
+  "source_kind": "REAL_PROVIDER",
+  "status": "COMPLETE",
+  "train_rows": 186814,
+  "validation_rows": 102250
+}

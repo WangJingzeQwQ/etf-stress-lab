@@ -1,0 +1,255 @@
+{
+  "data": {
+    "data_version": "sha256:44127aa7dc2539e90375fa1e03b2b0f8dfafd21787dc18a105b6dd773f26f7c6",
+    "holdout": {
+      "end": "2026-09-23",
+      "start": "2025-01-24"
+    },
+    "purge_sessions": 21,
+    "source_kind": "REAL_PROVIDER",
+    "split_plan_hash": "sha256:bde8e6ce4ece98ddbf13a88096f2979210552ddbd1b2f43f7417455443228ced",
+    "train": {
+      "end": "2023-08-23",
+      "start": "2018-04-03"
+    },
+    "validation": {
+      "end": "2024-12-24",
+      "start": "2023-09-22"
+    }
+  },
+  "execution_accounting": {
+    "adv": "T-1 ADV20 participation cap",
+    "debt": "event-based; interest based on prior close debt",
+    "liquidation_day": "skip strategy rebalance",
+    "lot_size": 100,
+    "price": "unadjusted raw OHLC",
+    "stop_and_limit": "no synthetic fill through missing or locked bars",
+    "t_plus_one": "code-and-date rule table",
+    "terminal": "no reentry or new position"
+  },
+  "fixed_choices": {
+    "do_not_change_threshold_seed_window_or_metric_after_holdout": true,
+    "do_not_fit_on_holdout": true,
+    "do_not_modify_split_dates": true,
+    "do_not_retry_holdout": true
+  },
+  "frozen_at": "2026-10-31",
+  "holdout_evaluated": false,
+  "models": {
+    "artifact_hashes": {
+      "development_backtest": "sha256:8ad8728716e75444a58f4df0d777114d2d76faa8f279296ceab7393389c1220e",
+      "formal_gate": "sha256:c672416b867bc2fc3c5eb5143a29dda844bc301c2c9f787828148944cf79d3e4",
+      "g2_results": "sha256:ae8047c768079b6c2d66443a9f1bd8708166655be3777338fd537cda37b3d60b",
+      "g2_seed_101": "sha256:731235690f1ab65312575bead0d64390510b86ecc2ca8d156f8dbe6cae0843ef",
+      "g2_seed_17": "sha256:96bf305db5c28a4c7a9343a70da22a00a9e19a8f652cb3aed54426eb5af051ba",
+      "g2_seed_29": "sha256:6998013f6bbd609682200ee6e174205705ee5a22f84a72fe695518e47fd3ccd7",
+      "g2_seed_43": "sha256:e3ae2d2a4e24e6d2c10e9c33823543c52b1690c6271463b98fe512df17fb48cf",
+      "g2_seed_71": "sha256:1aa507ab7e41b554b7d28b4d3b03f97e56016d60d3febd2a0578e0819992db13",
+      "g3_a_seed_101": "sha256:e7816fc54f0de864461d1902fa29c5fc844ad04ab7cafe5c1e44b31ca08bc962",
+      "g3_a_seed_17": "sha256:b97705acd6acac1427a477c828459ce19d6323ab2440ffb1c8925154dc47694e",
+      "g3_a_seed_29": "sha256:f2495615beed768e050d343dabbab3064e6ba94952cc55b43b84cccfc1c322a8",
+      "g3_a_seed_43": "sha256:a70cff4e0053e5cf03853f0b14fe29fbb505cc404e5d31c56a48b513dd32d671",
+      "g3_a_seed_71": "sha256:04a333de6fd4d897a0564c6aeec380383b3cc83d6656c18ee77849156e5f99ae",
+      "g3_c_seed_101": "sha256:26803c391ecfbf3596c337fce14c92042c9317edd655a68da1c7be1f88d51610",
+      "g3_c_seed_17": "sha256:e4f2d403a503141dfb8eef4dba7a0d78e3a28d1afaaeeb79b88c53df26d5f614",
+      "g3_c_seed_29": "sha256:c10a004c0f4ea733e5c9e0c5818876e17ea6d266afe7bcc06fcf20c410c7067e",
+      "g3_c_seed_43": "sha256:e21456e310777cd4153b59d6fe4f8908e6e9b81cd2062da6eb3246c2c3823bdc",
+      "g3_c_seed_71": "sha256:a46f740407b7775474437f79f79aea651644d84d4f71db53db9ea3a83433a400",
+      "g3_results": "sha256:e7705038d5f2e124e2b082209e62e764602892472466f565464006b5f02fa972",
+      "g4_g6_results": "sha256:dd0605f3a57d38fdd78ab8c6d9e080fba8098b2bbec5b37a3a870bc739e5bed9",
+      "g4_seed_101": "sha256:ed6b605ba38d9eae884398d1b8f860d11710b9f16234cc9271326c78ae3ae299",
+      "g4_seed_17": "sha256:df56c7eddc5424dfab0d73d5ccc5ea0f172519622df8017a1201f74dd103440d",
+      "g4_seed_29": "sha256:5c507b225109bbea7e2ce660206f57f2aa5679693bc8ec8cfb6a797f5a0d4a82",
+      "g4_seed_43": "sha256:2879fa0950f7f042d6a0d3ec671bbf8602e96115f6073ae4dad2b0a8e9990419",
+      "g4_seed_71": "sha256:8ddcbc8a6126b4af3f87ffef8664349297d1dbebd3102a9492deb475e3d9954e",
+      "g5_results": "sha256:011730ab18835983a9e4fd01accf0431e99930da55a7cc915c56a3bff550d8dc",
+      "g6_lambda_selection": "sha256:b4c64f271b15258300fad6748d962320a993fa223639533790d77723ecd1df52",
+      "g6_seed_101": "sha256:2d6c97174512849a066a3928401a903a3078649b277c7603de966b753d6a9828",
+      "g6_seed_17": "sha256:468bfba14ca6d360a84cf2d393365a7cc900fb96f366421485cec05d75ca9938",
+      "g6_seed_29": "sha256:9cde22c573989df337ce978177d6b885471177117f15c8bb20b15d9c7f60b6f7",
+      "g6_seed_43": "sha256:e4ebf7ff6b53deb72ee9da6628aae75b414d8adf9890644e923ce9c5c1d68fa9",
+      "g6_seed_71": "sha256:6ed6ead5ae627b0896eafbfa1fdd04c7b2418b7c4f9d2b1a25ebe54877e8f3b7",
+      "modeling_manifest": "sha256:c8dc15a6acb683700369b4f57f6bb6012eabac478ddcf3fe07136413ec8c423f",
+      "phase3_manifest": "sha256:434620a1156971cc2af9a39e47db136771d19bc954f03697a8323d9957b6b666"
+    },
+    "cvar": {
+      "alpha": 0.1,
+      "alpha_sensitivity": [
+        0.05,
+        0.1
+      ],
+      "interpretation": "CVaR reward shaping, not a constrained MDP",
+      "lambda": 0.5,
+      "lambda_selection_scope": "validation_only",
+      "window": 120,
+      "windows_sensitivity": [
+        60,
+        120,
+        250
+      ]
+    },
+    "g4_g6_training_budget_steps": 4096,
+    "g5_seeds": [
+      11,
+      19,
+      31,
+      47,
+      59,
+      67,
+      79,
+      89,
+      97,
+      107,
+      127,
+      139,
+      149,
+      163,
+      181,
+      193,
+      211,
+      227,
+      241,
+      257
+    ],
+    "paired_seeds": [
+      17,
+      29,
+      43,
+      71,
+      101
+    ]
+  },
+  "multiple_testing": {
+    "alpha": 0.05,
+    "family": "primary_group_endpoint_tests",
+    "method": "Holm"
+  },
+  "primary_comparison": {
+    "cell": {
+      "cost_scenario": "base",
+      "initial_cash": 1000000,
+      "leverage": 50
+    },
+    "endpoints": [
+      "first_liquidation_probability",
+      "time_to_first_liquidation_trading_days",
+      "expected_shortfall_95"
+    ],
+    "groups": [
+      "G4",
+      "G6"
+    ],
+    "paired_unit": "seed",
+    "question": "Does CVaR reward shaping change high-leverage survival or tail outcomes relative to paired standard PPO?",
+    "seed_count": 5,
+    "winner_may_be_G4_or_G6_or_neither": true
+  },
+  "research_claim_limit": "Synthetic financing, synthetic_v1 liquidation and parameterized costs. No conclusion is a real broker financing capability.",
+  "scenario_grid": {
+    "annual_interest_sensitivity": [
+      0.03,
+      0.06,
+      0.1
+    ],
+    "capital_base_mode": "initial_equity",
+    "cost_scenarios": {
+      "base": {
+        "buy_slippage_bps": 5.0,
+        "commission_rate": 0.0003,
+        "exchange_fee_rate": 0.0,
+        "fixed_other_fee": 0.0,
+        "max_participation_rate": 0.1,
+        "minimum_commission_per_order": 5.0,
+        "sell_slippage_bps": 5.0,
+        "stamp_duty_rate": 0.0
+      },
+      "high": {
+        "buy_slippage_bps": 10,
+        "commission_rate": 0.0006,
+        "exchange_fee_rate": 0.0,
+        "fixed_other_fee": 0.0,
+        "max_participation_rate": 0.05,
+        "minimum_commission_per_order": 5.0,
+        "sell_slippage_bps": 10,
+        "stamp_duty_rate": 0.0
+      },
+      "low": {
+        "buy_slippage_bps": 2,
+        "commission_rate": 0.0001,
+        "exchange_fee_rate": 0.0,
+        "fixed_other_fee": 0.0,
+        "max_participation_rate": 0.2,
+        "minimum_commission_per_order": 5.0,
+        "sell_slippage_bps": 2,
+        "stamp_duty_rate": 0.0
+      }
+    },
+    "financing_mode": "synthetic_stress",
+    "initial_cash": [
+      100000,
+      1000000,
+      10000000
+    ],
+    "leverage": [
+      1,
+      2,
+      5,
+      10,
+      25,
+      50,
+      75,
+      100
+    ],
+    "liquidation_model": "synthetic_v1",
+    "maintenance_floor": 0.0025,
+    "maintenance_fraction": 0.5,
+    "min_commission_sensitivity": [
+      0,
+      5,
+      10
+    ]
+  },
+  "schema": "etf_stress_preregistration_v1",
+  "secondary_comparison": {
+    "cell": {
+      "cost_scenario": "base",
+      "initial_cash": 1000000,
+      "leverage": 1
+    },
+    "endpoints": [
+      "total_return",
+      "max_drawdown",
+      "sharpe",
+      "fee_drag",
+      "cost_ratio"
+    ],
+    "g1_frequency_treated_as_sensitivity": true,
+    "g5_reported_as_seed_distribution": true,
+    "groups": [
+      "G1_monthly",
+      "G1_weekly",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6"
+    ]
+  },
+  "spec_version": "etf-stress-spec-2026-10-29-r2",
+  "status": "FROZEN_BEFORE_FINAL_HOLDOUT",
+  "survival": {
+    "bootstrap": {
+      "block_sessions": 20,
+      "method": "moving_time_block",
+      "repetitions": 2000,
+      "seed": 20261031
+    },
+    "censoring": "right_censored_if_no_first_liquidation",
+    "confidence_level": 0.95,
+    "curve": "Kaplan-Meier",
+    "event": "first_liquidation",
+    "main_policy": "first_liquidation_terminates",
+    "matrix_cells_not_independent_samples": true
+  },
+  "version": "master-comparison-v1"
+}

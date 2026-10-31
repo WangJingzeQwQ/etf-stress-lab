@@ -1,0 +1,162 @@
+{
+  "codes": [
+    {
+      "code": "510300",
+      "current_name": "沪深300ETF华泰"
+    },
+    {
+      "code": "510500",
+      "current_name": "中证500ETF南方"
+    },
+    {
+      "code": "159915",
+      "current_name": "创业板ETF易方达"
+    },
+    {
+      "code": "511010",
+      "current_name": "国债ETF国泰"
+    },
+    {
+      "code": "512100",
+      "current_name": "中证1000ETF南"
+    }
+  ],
+  "configured_provider": "akshare_sina",
+  "download_summary": {
+    "completed_codes": [],
+    "failed_codes": {},
+    "record_counts": {},
+    "skipped_up_to_date_codes": [
+      "159915",
+      "510300",
+      "510500",
+      "511010",
+      "512100"
+    ],
+    "success": true
+  },
+  "files": [
+    {
+      "adjustment": [
+        "none"
+      ],
+      "amount_currency": [
+        "CNY"
+      ],
+      "code": "510300",
+      "first_date": "2024-01-02",
+      "last_date": "2026-10-29",
+      "name": "沪深300ETF华泰",
+      "provider": [
+        "akshare_sina_raw"
+      ],
+      "rows": 682,
+      "sha256": "sha256:67f420c3e73f2e554b6511771336b4ba9946e6871ffe2415774defccdcddac09",
+      "status": "downloaded",
+      "volume_unit": [
+        "shares"
+      ]
+    },
+    {
+      "adjustment": [
+        "none"
+      ],
+      "amount_currency": [
+        "CNY"
+      ],
+      "code": "510500",
+      "first_date": "2024-01-02",
+      "last_date": "2026-10-29",
+      "name": "中证500ETF南方",
+      "provider": [
+        "akshare_sina_raw"
+      ],
+      "rows": 682,
+      "sha256": "sha256:5379110126d29c9b1c63b92676b7e9afef27880bccdb11ee199e780e22ec524f",
+      "status": "downloaded",
+      "volume_unit": [
+        "shares"
+      ]
+    },
+    {
+      "adjustment": [
+        "none"
+      ],
+      "amount_currency": [
+        "CNY"
+      ],
+      "code": "159915",
+      "first_date": "2024-01-02",
+      "last_date": "2026-10-29",
+      "name": "创业板ETF易方达",
+      "provider": [
+        "akshare_sina_raw"
+      ],
+      "rows": 682,
+      "sha256": "sha256:8b102b3bcb5a125b2a1f461e8078b503ecf0ab3ab141d454f62b6e03e1dcb116",
+      "status": "downloaded",
+      "volume_unit": [
+        "shares"
+      ]
+    },
+    {
+      "adjustment": [
+        "none"
+      ],
+      "amount_currency": [
+        "CNY"
+      ],
+      "code": "511010",
+      "first_date": "2024-01-02",
+      "last_date": "2026-10-29",
+      "name": "国债ETF国泰",
+      "provider": [
+        "akshare_sina_raw"
+      ],
+      "rows": 682,
+      "sha256": "sha256:5ffe22f05d52b514a6bac5d34d5e54eb50a110ccf13c53539450709cc1361135",
+      "status": "downloaded",
+      "volume_unit": [
+        "shares"
+      ]
+    },
+    {
+      "adjustment": [
+        "none"
+      ],
+      "amount_currency": [
+        "CNY"
+      ],
+      "code": "512100",
+      "first_date": "2024-01-02",
+      "last_date": "2026-10-29",
+      "name": "中证1000ETF南",
+      "provider": [
+        "akshare_sina_raw"
+      ],
+      "rows": 682,
+      "sha256": "sha256:c50745a6a0262942f3b9a093ace89de1bcaa2223537e8e8b859d85f69dfda6d3",
+      "status": "downloaded",
+      "volume_unit": [
+        "shares"
+      ]
+    }
+  ],
+  "formal_research_allowed": false,
+  "milestone": "M1.1",
+  "missing_for_formal_bundle": [
+    "audited historical ETF master including delisted and renamed funds",
+    "historical trading-status intervals",
+    "code-level T+0/T+1 and price-limit rule history",
+    "corporate actions with effective_date and known_at",
+    "broker fee evidence with effective dates"
+  ],
+  "provider": "akshare_sina_raw",
+  "real_market_evidence_allowed": false,
+  "request_interval_seconds": 3.0,
+  "requested_end": "2026-10-29",
+  "requested_start": "2024-01-01",
+  "source_kind": "REAL_PROVIDER_PROVISIONAL",
+  "status": "PASS",
+  "warning": "M1.1 is a real raw-data ingestion spike only. Current names and available quote history do not establish a survivorship-free historical universe."
+}

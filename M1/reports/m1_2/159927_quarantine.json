@@ -1,0 +1,19 @@
+{
+  "action": "QUARANTINED_DUPLICATE_TAIL",
+  "cleaned_sha256": "sha256:30a1517c7bf2472d77396497af2b8f62e15d7e89c0286763660d64ce11f0cf0d",
+  "code": "159927",
+  "duplicated_from": "2018-02-13",
+  "gap_days": 1230,
+  "matching_fields": [
+    "raw_open",
+    "raw_high",
+    "raw_low",
+    "raw_close",
+    "volume",
+    "amount"
+  ],
+  "original_file": "data\\m1_2\\raw\\etf\\159927.ndjson",
+  "original_sha256": "sha256:eaa133226a3e8894d1bba6fc994ed1603682c0c5fca69368c57ec16661d9b929",
+  "quarantine_copy": "data\\m1_2\\raw\\quarantine\\159927.original.ndjson",
+  "removed_date": "2021-06-27"
+}

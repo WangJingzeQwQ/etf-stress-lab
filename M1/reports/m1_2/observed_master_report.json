@@ -1,0 +1,16 @@
+{
+  "complete_records": 1810,
+  "current_records": 1691,
+  "date_precision": {
+    "delist_date": "last valid raw quote or last exchange observation",
+    "list_date": "earliest valid raw quote or first exchange observation",
+    "name_changes": "exchange snapshot granularity"
+  },
+  "delisted_records": 119,
+  "formal_research_allowed": false,
+  "master_output": "data\\m1_2\\meta\\etf_master.observed_complete.ndjson",
+  "official_delisting_evidence_complete": false,
+  "official_listing_dates_complete": false,
+  "records": 1810,
+  "status": "OBSERVED_MASTER_READY"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+reports/runs/*
+!reports/runs/.gitkeep
+data/cache/
+*.log
+*.tmp
+data/state/*.json
+

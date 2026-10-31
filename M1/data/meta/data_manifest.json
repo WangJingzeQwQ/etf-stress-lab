@@ -1,0 +1,17 @@
+{
+  "coverage": {
+    "corporate_actions": true,
+    "cost_schedules": true,
+    "delist_history": true,
+    "historical_master": true,
+    "raw_ohlcv": true,
+    "trading_rules": true
+  },
+  "data_version": "sha256:f0bae48a54b98021e25b3f1c901a9af760390c37a946f4e8a5b4e938941b4db6",
+  "notes": [
+    "Synthetic calendar, prices, liquidity, corporate actions and master history. No real-market conclusion is permitted."
+  ],
+  "real_market_evidence_allowed": false,
+  "source_kind": "SYNTHETIC_FIXTURE",
+  "source_name": "M1 Phase 1 deterministic fixture"
+}

@@ -1,0 +1,27 @@
+{
+  "bundle_root": "data\\m1_2",
+  "corporate_actions": 1177,
+  "cost_scenarios": [
+    "base",
+    "high",
+    "low"
+  ],
+  "data_version": "sha256:44127aa7dc2539e90375fa1e03b2b0f8dfafd21787dc18a105b6dd773f26f7c6",
+  "files": {
+    "corporate_actions": "data\\m1_2\\meta\\corporate_actions.ndjson",
+    "manifest": "data\\m1_2\\meta\\data_manifest.json",
+    "master": "data\\m1_2\\meta\\etf_master.ndjson",
+    "raw": "data\\m1_2\\raw\\etf",
+    "trading_rules": "data\\m1_2\\meta\\trading_rules.ndjson"
+  },
+  "formal_research_allowed": true,
+  "master_codes": 1810,
+  "raw_files": 1810,
+  "raw_rows": 1435802,
+  "raw_validation_status": "VALIDATED",
+  "report": "reports\\m1_2\\formal_bundle_build.json",
+  "status": "WRITTEN",
+  "trading_rule_rows": 3333,
+  "trading_rules_sha256": "sha256:9a6bc57cf769b90ad0d6690c91f1575c272cc75928d98b864150a86ee763e86e",
+  "write_requested": true
+}

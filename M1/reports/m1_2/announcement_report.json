@@ -1,0 +1,18 @@
+{
+  "actions": 1177,
+  "announcement_matched": 1152,
+  "cache_hits": 356,
+  "codes": 357,
+  "effective_date_fallback": 25,
+  "failures": [],
+  "formal_research_allowed": false,
+  "network_requests": 3,
+  "output": "data\\m1_2\\meta\\corporate_actions.annotated.ndjson",
+  "status": "ANNOUNCEMENTS_ANNOTATED",
+  "warnings": [
+    {
+      "code": "560010",
+      "warning": "provider returned an empty announcement table"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"buy_slippage_bps":5,"commission_rate":0.0003,"cost_model":"parameterized_etf_v1","effective_from":"2023-01-01","effective_to":"2024-12-31","exchange_fee_rate":0.0,"fixed_other_fee":0.0,"minimum_commission_per_order":5.0,"scenario":"base","sell_slippage_bps":5,"source_kind":"PARAMETERIZED_NOT_BROKER_DOCUMENT","stamp_duty_rate":0.0}

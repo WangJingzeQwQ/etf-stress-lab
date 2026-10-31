@@ -1,0 +1,32 @@
+{
+  "claim_preserved": true,
+  "error": "KeyError: momentum_20",
+  "failed_stage": "signal_input_schema",
+  "holdout_performance_metrics_observed": false,
+  "model_or_parameter_changes": false,
+  "policy": "Reuse the existing CLAIMED_ONCE record and complete the same frozen evaluation without creating a second claim.",
+  "preregistration_hash": "sha256:391e3e140ad9b55821590b4296d708a6ad8b9c663a7cd05c674118588f9d9677",
+  "replacement_input": "reports/modeling_dataset_manifest.json partitions.holdout (feature-bearing modeling panel)",
+  "rejected_input": "Phase 3 label-only holdout partition",
+  "result_driven_retry": false,
+  "status": "IMPLEMENTATION_FAULT_BEFORE_RESULT",
+  "additional_incidents": [
+    {
+      "error": "KeyError: date_to",
+      "failed_stage": "post_matrix_primary_summary",
+      "holdout_cells_completed": 72,
+      "holdout_performance_metrics_observed": false,
+      "result_file_written": false,
+      "resolution": "Persist a per-cell checkpoint before post-processing; survival censoring is handled by the dedicated post-processing fix."
+    },
+    {
+      "error": "ValueError: date string supplied as survival-time number",
+      "failed_stage": "post_checkpoint_primary_summary",
+      "holdout_cells_completed": 72,
+      "holdout_performance_metrics_observed": false,
+      "result_file_written": false,
+      "resolution": "Use frozen path_sessions for right-censored survival times; all 72 cell checkpoints were preserved."
+    }
+  ],
+  "claim_count": 1
+}

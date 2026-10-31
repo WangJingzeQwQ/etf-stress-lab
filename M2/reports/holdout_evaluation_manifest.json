@@ -1,0 +1,19 @@
+{
+  "claim": {
+    "evaluator_id": "codex-primary-2026-10-31",
+    "holdout_id": "final_holdout_v1",
+    "plan_hash": "sha256:bde8e6ce4ece98ddbf13a88096f2979210552ddbd1b2f43f7417455443228ced",
+    "preregistration_hash": "sha256:391e3e140ad9b55821590b4296d708a6ad8b9c663a7cd05c674118588f9d9677",
+    "preregistration_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\reports\\preregistration\\master_comparison_v1.json",
+    "status": "CLAIMED_ONCE"
+  },
+  "claim_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\splits\\final_holdout_v1.claim.json",
+  "date_from": "2025-01-24",
+  "date_to": "2026-09-23",
+  "holdout_evaluated": true,
+  "preregistration_hash": "sha256:391e3e140ad9b55821590b4296d708a6ad8b9c663a7cd05c674118588f9d9677",
+  "result_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\reports\\holdout_results.json",
+  "result_sha256": "sha256:40a2ae5c19150edc4c6d200bf3d473754a775c7a39e6ab2067c3d515d7bc9677",
+  "retry_allowed": false,
+  "status": "COMPLETE"
+}

@@ -1,0 +1,82 @@
+spec_version: etf-stress-spec-2026-10-29-r2
+data:
+  source: synthetic_fixture
+  source_kind: SYNTHETIC_FIXTURE
+  start_date: "2023-10-02"
+  end_date: "2024-06-28"
+  fixture_seed: 20261029
+  required_fields_note: "Synthetic fixture only; not a real-market result."
+
+data_pipeline:
+  source: phase1_fixture
+  formal_research: false
+  request_interval_seconds: 3
+  max_retries: 3
+  backoff_seconds: 1
+  failure_queue: data/state/failure_queue.json
+  download_state: data/state/download_state.json
+  universe_output: reports/phase1
+  raw_directory: data/raw/etf
+  master_file: data/meta/etf_master.ndjson
+  corporate_actions_file: data/meta/corporate_actions.ndjson
+  trading_rules_file: data/meta/trading_rules.ndjson
+
+universe:
+  min_listed_sessions: 60
+  adv_window: 20
+  min_adv_amount: 20000000
+
+strategy:
+  group: G1
+  frequency: monthly
+  momentum_lookback_sessions: 20
+  top_n: 5
+
+broker:
+  initial_cash: 1000000
+  leverage: 2
+  capital_base_mode: initial_equity
+  financing_mode: synthetic_stress
+  reentry_policy: first_liquidation_terminates
+  annual_interest_rate: 0.06
+  interest_day_count: 365
+  maintenance_fraction: 0.50
+  maintenance_floor: 0.0025
+  lot_size: 100
+  p0_1_frozen: true
+  liquidation_model: synthetic_v1
+
+cost:
+  cost_model: parameterized_etf_v1
+  effective_from: "2023-01-01"
+  effective_to: "2024-12-31"
+  commission_rate: 0.00030
+  minimum_commission_per_order: 5.00
+  exchange_fee_rate: 0.0
+  stamp_duty_rate: 0.0
+  fixed_other_fee: 0.0
+  buy_slippage_bps: 5
+  sell_slippage_bps: 5
+
+execution:
+  execution_model: adv_limit_v1
+  max_participation_rate: 0.10
+  adv_window: 20
+  lot_size: 100
+  liquidity_barrier_uses: "T-1"
+
+features:
+  version: "feature_v1"
+  min_history_sessions: 61
+
+labels:
+  horizon_sessions: 20
+  top_quantile: 0.20
+  cross_sectional_reference: median
+
+
+output:
+  root: reports/runs
+  format: ndjson
+  compute_fee_drag: true
+

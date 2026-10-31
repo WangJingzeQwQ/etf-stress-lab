@@ -1,0 +1,138 @@
+spec_version: etf-stress-spec-2026-10-29-r2
+
+data:
+  source: stored_bundle
+  source_kind: REAL_PROVIDER
+  start_date: "2018-01-01"
+  end_date: "2026-10-29"
+  fixture_seed: 0
+
+data_pipeline:
+  source: stored_bundle
+  bundle_root: "../M1/data/m1_2"
+  formal_research: true
+
+universe:
+  min_listed_sessions: 60
+  adv_window: 20
+  min_adv_amount: 20000000
+
+features:
+  version: "feature_v1"
+  min_history_sessions: 61
+  panel_path: "data/features/real/features_panel.ndjson"
+
+labels:
+  horizon_sessions: 20
+  top_quantile: 0.20
+  cross_sectional_reference: median
+
+split:
+  holdout_id: final_holdout_v1
+  train_fraction: 0.65
+  validation_fraction: 0.15
+  embargo_sessions: 0
+  plan_path: data/splits/final_holdout_v1.json
+  partition_root: data/splits/final_holdout_v1
+  report_path: reports/phase3_split_manifest.json
+  walk_forward:
+    initial_train_sessions: 300
+    validation_sessions: 60
+    step_sessions: 60
+
+models:
+  paired_seeds: [17, 29, 43, 71, 101]
+  g5_seeds:
+    [11, 19, 31, 47, 59, 67, 79, 89, 97, 107,
+     127, 139, 149, 163, 181, 193, 211, 227, 241, 257]
+  a_layer:
+    report_path: reports/g2_seed_results.json
+    walk_forward_fold_ids: [17, 18, 19, 20]
+    params:
+      n_estimators: 300
+      learning_rate: 0.03
+      num_leaves: 15
+      min_child_samples: 200
+      subsample: 0.90
+      colsample_bytree: 0.90
+      reg_lambda: 1.0
+      n_jobs: 4
+  c_layer:
+    sequence_length: 20
+    hidden_size: 16
+    epochs: 6
+    batch_size: 4096
+    learning_rate: 0.001
+
+rl:
+  training_start: "2022-01-04"
+  hold_sessions: 5
+  training_episode_steps: 24
+  validation_leverage: 10
+  training_leverages: [1, 10, 25, 50, 100]
+  cvar_window: 120
+  cvar_alpha: 0.10
+  cvar_lambda: 1.0
+  cvar_lambda_candidates: [0.5, 1.0, 2.0]
+  lambda_selection_steps: 2048
+  ppo:
+    total_steps: 4096
+    rollout_steps: 256
+    epochs: 4
+    batch_size: 64
+    learning_rate: 0.0003
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_ratio: 0.20
+    entropy_coefficient: 0.01
+    value_coefficient: 0.50
+    max_grad_norm: 0.50
+    hidden_size: 64
+
+strategy:
+  group: G1
+  frequency: monthly
+  momentum_lookback_sessions: 20
+  top_n: 5
+
+development:
+  leverage: 1
+
+broker:
+  initial_cash: 1000000
+  leverage: 2
+  capital_base_mode: initial_equity
+  financing_mode: synthetic_stress
+  reentry_policy: first_liquidation_terminates
+  annual_interest_rate: 0.06
+  interest_day_count: 365
+  maintenance_fraction: 0.50
+  maintenance_floor: 0.0025
+  lot_size: 100
+  p0_1_frozen: true
+  liquidation_model: synthetic_v1
+
+cost:
+  cost_model: parameterized_etf_v1
+  effective_from: "2018-01-01"
+  effective_to: "2026-10-29"
+  commission_rate: 0.00030
+  minimum_commission_per_order: 5.00
+  exchange_fee_rate: 0.0
+  stamp_duty_rate: 0.0
+  fixed_other_fee: 0.0
+  buy_slippage_bps: 5
+  sell_slippage_bps: 5
+
+execution:
+  execution_model: adv_limit_v1
+  max_participation_rate: 0.10
+  adv_window: 20
+  lot_size: 100
+  liquidity_barrier_uses: "T-1"
+
+output:
+  root: "reports/runs"
+  format: ndjson
+  compute_fee_drag: true
+

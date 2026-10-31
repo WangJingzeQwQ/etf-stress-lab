@@ -1,0 +1,30 @@
+{
+  "auxiliary_snapshot_only_codes": [
+    "158065",
+    "158079"
+  ],
+  "cache_hits": 124,
+  "current_codes": 1691,
+  "end_date": "2026-10-29",
+  "failures": [],
+  "formal_research_allowed": false,
+  "inferred_delisted_codes": 119,
+  "latest_exchange_date": "2026-10-29",
+  "limitations": [
+    "list_date is inferred from first monthly exchange observation",
+    "delist_date is inferred from last observation and requires official verification",
+    "historical name changes are observed at snapshot granularity",
+    "trading rules, corporate actions and fees are still missing"
+  ],
+  "master_output": "data\\m1_2\\meta\\etf_master.provisional.ndjson",
+  "master_sha256": "sha256:a50e4713ffb1df84d35658bb8dfd35bc91a69d3cd20396f72216509a9a45498d",
+  "network_requests": 0,
+  "run_mode": "cache_replay",
+  "source_kind": "REAL_PROVIDER_PROVISIONAL",
+  "sse_months": 106,
+  "start_date": "2018-01-01",
+  "status": "PROVISIONAL_MASTER_READY",
+  "szse_ranges": 18,
+  "unique_codes": 1810,
+  "warnings": []
+}

@@ -1,0 +1,37 @@
+{
+  "data_version": "sha256:44127aa7dc2539e90375fa1e03b2b0f8dfafd21787dc18a105b6dd773f26f7c6",
+  "feature_keys": 553457,
+  "features_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\features\\real\\features_panel.ndjson",
+  "features_sha256": "sha256:e12c89d8de31152ebde10d1e5dfe9cd42e37aadc2ad08c2083fab2bc9cefee10",
+  "holdout_evaluated": false,
+  "label_keys": 553254,
+  "labels_path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\labels\\real\\labels_H20_panel.ndjson",
+  "labels_sha256": "sha256:fdcba40f6453be24dbb7964475fec5d8f01699820e759f7694e2659d5a52f36f",
+  "labels_without_features": 603,
+  "matched_keys": 552651,
+  "partitions": {
+    "holdout": {
+      "artifact_sha256": "sha256:c67804d74c05a6911b77236bf00811dc96abe96a62e4f4f2f805424d44015b34",
+      "path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\modeling\\real\\holdout.ndjson",
+      "rows": 248592
+    },
+    "purged": {
+      "artifact_sha256": "sha256:f364268f9208f1f50bedd5ce6d8166aff9b88aabae8ed50757881ea632011c72",
+      "path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\modeling\\real\\purged.ndjson",
+      "rows": 14995
+    },
+    "train": {
+      "artifact_sha256": "sha256:0814dc5277d7f7d5d8590240cee564cd0df4a182619a15151e89c40412402ff4",
+      "path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\modeling\\real\\train.ndjson",
+      "rows": 186814
+    },
+    "validation": {
+      "artifact_sha256": "sha256:28ad5adb8ef5d184fb9b839cbe61983fef3aa63e6796e746f193f6ea8c4d7823",
+      "path": "C:\\Users\\think\\Desktop\\基于分层 AI 架构与极端杠杆压力测试的 ETF 量化回测系统\\M2\\data\\modeling\\real\\validation.ndjson",
+      "rows": 102250
+    }
+  },
+  "source_kind": "REAL_PROVIDER",
+  "status": "READY",
+  "unmatched_feature_rows": 806
+}

@@ -1,0 +1,16 @@
+m1_1:
+  codes:
+    - "510300"
+    - "510500"
+    - "159915"
+    - "511010"
+    - "512100"
+  start_date: "2024-01-01"
+  end_date: "2026-10-29"
+  output_root: "data/m1_1"
+  report_path: "reports/m1_1/small_batch_report.json"
+  provider: "akshare_sina"
+  request_interval_seconds: 3
+  max_retries: 3
+  backoff_seconds: 1
+

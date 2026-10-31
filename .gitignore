@@ -1,0 +1,64 @@
+# Local runtime
+/.runtime/
+*.pid
+*.log
+*.tmp
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.coverage
+**/htmlcov/
+**/.venv/
+**/venv/
+**/.mypy_cache/
+**/.ruff_cache/
+**/*.egg-info/
+**/build/
+
+# JavaScript
+**/node_modules/
+**/dist/
+**/.vite/
+**/coverage/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Generated runs
+**/reports/runs/*
+!**/reports/runs/.gitkeep
+
+# Local download/state caches
+**/data/cache/
+**/data/state/
+
+# Large generated research data
+/M1/data/derived/
+/M1/data/m1_1/
+/M1/data/m1_2/
+/M1/data/raw/
+/M2/data/features/
+/M2/data/labels/
+/M2/data/modeling/
+/M2/data/models/
+/M2/data/splits/final_holdout_v1/
+
+# Internal agent notes are kept locally but are not part of the public project.
+/开发日志.md
+/任务交接文档.md
+/提示词.md
+/manual for Codex.md
+
+# Secrets and local environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+

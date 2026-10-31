@@ -1,0 +1,19 @@
+{
+  "audit_file": "universe_20240219.ndjson",
+  "data_cutoff": "2024-02-16",
+  "eligible_codes": [
+    "159915",
+    "510050",
+    "510300",
+    "510500",
+    "511010",
+    "512100"
+  ],
+  "eligible_count": 6,
+  "execution_date": "2024-02-19",
+  "real_market_evidence_allowed": false,
+  "rejected_count": 1,
+  "source_data_version": "sha256:f0bae48a54b98021e25b3f1c901a9af760390c37a946f4e8a5b4e938941b4db6",
+  "source_kind": "SYNTHETIC_FIXTURE",
+  "universe_hash": "sha256:ad274d4b4e1a0aa2af8efc91b71a864fac265ab631d870fd85b8e6d60d26b4ad"
+}
