@@ -161,7 +161,7 @@ python -m venv .venv
 - [研究口径简报](项目简报.md)
 - [前端验收记录](M2/tests/test_frontend.md)
 
-## GitHub 发布
+## License
 
-仓库当前没有自动附加开源许可证。公开前需要由作者选择代码许可证，并单独确认行情数据与第三方依赖的授权边界。发布步骤和大文件策略见 [docs/PUBLISHING.md](docs/PUBLISHING.md)。
+本项目源码采用 [MIT License](LICENSE)。MIT 许可证仅覆盖本仓库中的原创代码和文档，不替代行情数据、交易所规则或第三方依赖各自的授权条款。发布与大文件策略见 [docs/PUBLISHING.md](docs/PUBLISHING.md)。
 

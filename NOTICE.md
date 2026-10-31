@@ -6,5 +6,5 @@ It does not redistribute the complete market-data bundle used for the local stud
 
 The leveraged backtests use synthetic credit and liquidation rules. They are not brokerage quotes, trading permissions, investment advice, or evidence that a strategy can be executed at the displayed leverage.
 
-The repository does not yet declare a code license. The copyright holder must choose one before public distribution; a code license does not grant rights to third-party market data.
+Original project code and documentation are licensed under the MIT License. This code license does not grant rights to third-party market data, exchange publications, or dependencies with separate terms.
 
